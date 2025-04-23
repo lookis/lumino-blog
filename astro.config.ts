@@ -1,4 +1,3 @@
-import fs from "node:fs";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -6,6 +5,7 @@ import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
 import { defineConfig, envField } from "astro/config";
+import fs from "node:fs";
 import { siteConfig } from "./src/site.config";
 
 // Remark plugins
@@ -17,11 +17,11 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeUnwrapImages from "rehype-unwrap-images";
 
-import rehypePrettyCode from "rehype-pretty-code";
 import {
   transformerMetaHighlight,
   transformerNotationDiff,
 } from "@shikijs/transformers";
+import rehypePrettyCode from "rehype-pretty-code";
 
 // https://astro.build/config
 export default defineConfig({
@@ -115,7 +115,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/prefetch/
   prefetch: true,
   // ! Please remember to replace the following site property with your own domain
-  site: "http://astrocitrus.artemkutsan.pp.ua/",
+  site: "https://lumino.yolab.app/",
   vite: {
     build: {
       sourcemap: true, // Source maps generation

@@ -93,65 +93,9 @@ import { Icon } from "astro-icon/components";
 						</a>
 					))
 				}
-				
-				<a
-					class="flex h-8 items-center rounded-lg bg-accent-base/5 px-4 text-accent-base underline-offset-2 hover:bg-accent-base/10"
-					data-astro-prefetch
-					href="/posts/citrus-docs/intro/"
-				>
-					Docs
-				</a>
-				
-				<!-- Dropdown menu button for large screens. Needs improvement. -->
-				<!--
-				<button
-					aria-expanded="false"
-					aria-haspopup="menu"
-					aria-label="Open main menu"
-					class="hidden md:flex group text-sm relative h-8 w-16 font-medium items-center justify-center px-4 rounded-lg bg-accent-base/5 text-accent-base hover:bg-accent-base/10"
-					id="toggle-navigation-menu"
-					type="button"
-				>
-					Menu
-				</button>
-				-->
+
 			</nav>
 			
-			<!-- Dropdown menu for large screens. Needs improvement. -->
-			<!--
-			<div id="menu" class="absolute left-0 right-0 w-fit ml-auto top-16 z-10 hidden" aria-hidden="true">
-				<div
-					id="menu-body"
-					class="fixed bg-bgColor rounded-lg -ml-56 w-56"
-				>
-					<nav
-						aria-label="Main menu"
-						class="px-4 py-4 rounded-lg border border-special-lighter bg-special-light shadow-[0px_10px_25px_rgba(0,0,0,0.15)] text-sm flex flex-col gap-y-2 font-medium"
-						id="main-navigation-menu"
-					>
-						{
-							menuLinks.map((link) => (
-								<a
-									aria-current={Astro.url.pathname === link.path ? "page" : false}
-									class="text-accent-two underline-offset-2 hover:underline rounded-lg h-8 gap-x-1 px-2 flex justify-center items-center"
-									data-astro-prefetch
-									href={link.path}
-								>
-									{link.title}
-								</a>
-							))
-						}
-						<a
-							class="flex h-8 items-center justify-center rounded-lg bg-accent-base/5 hover:bg-accent-base/10 px-4 text-accent-base"
-							data-astro-prefetch
-							href="/posts/citrus-docs/intro/"
-						>
-							Docs
-						</a>
-					</nav>
-				</div>
-			</div>
-			-->
 
 			<div class="ml-auto w-fit">
 				<div id="buttons-panel" class="top-4 md:top-8 -ml-[4.5rem] flex space-x-2">
@@ -160,29 +104,6 @@ import { Icon } from "astro-icon/components";
 				</div>
 			</div>	
 			
-			<mobile-button
-				aria-expanded="false"
-				aria-haspopup="menu"
-				aria-label="Open main menu"
-				class="group relative h-8 w-8 rounded-lg bg-color-100 hover:bg-accent-base/10 text-accent-base md:invisible md:hidden"
-				id="toggle-nav-menu-mobile"
-				type="button"
-			>
-				<Icon
-					id="open-nav-menu-icon"
-					aria-hidden="true"
-					class="absolute start-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 transition-all"
-					focusable="false"
-					name="hugeicons:menu-01"
-				/>
-				<Icon
-					id="close-nav-menu-icon"
-					aria-hidden="true"
-					class="absolute start-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all"
-					focusable="false"
-					name="hugeicons:cancel-01"
-				/>
-			</mobile-button>
 		</div>
 	</div>
 </header>
@@ -229,13 +150,6 @@ import { Icon } from "astro-icon/components";
 					</a>
 				))
 			}
-			<a
-				class="flex h-8 items-center rounded-lg bg-accent-base/5 px-4 text-accent-base underline-offset-2 hover:bg-accent-base/10"
-				data-astro-prefetch
-				href="/series/citrus-docs"
-			>
-				Docs
-			</a>
 		</nav>
 	</div>
 </div>
